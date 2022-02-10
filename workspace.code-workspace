@@ -16,7 +16,16 @@
 	            "request": "launch",
 	            "program": "${file}",
 	            "console": "integratedTerminal"
-	        }
+	        },
+			{
+				"name": "(test debug only)",
+				"type": "python",
+				"request" : "launch",
+				"purpose": ["debug-test"],
+				"console": "integratedTerminal",
+				"gevent": true,
+				"justMyCode": false
+			}
 	    ]
 	},
 	"settings": {
